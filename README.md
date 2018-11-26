@@ -1,3 +1,9 @@
+REACT JS PATTERNS
+---------------------------------------
+https://reactpatterns.com/
+
+
+
 CREATE-REACT-APP documentation
 ----------------------------------------
 https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
