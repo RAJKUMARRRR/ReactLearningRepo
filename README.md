@@ -14,6 +14,10 @@ PROP-TYPES:
 https://reactjs.org/docs/typechecking-with-proptypes.html
 
 
+Redux
+------------------------------------
+https://redux.js.org/api/applymiddleware
+
 
 chai/mochaoe jasmine/jest/enzyme/
 -------------------------------------------------
