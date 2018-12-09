@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Access to this site is blocked</title>
+<link rel="stylesheet" href="https://www.mailcontrol.com/css/hybrid_block.css" type="text/css">
+</head>
+<body style="margin-left: 0px">
+    <div style="border: 1px solid #285EA6;width: 95%; max-width: 700px; overflow: hidden; margin-left: 1px; background-color: #EEF2F7;">
+    <div style="cursor: pointer"
+        onclick="window.open('https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nzhkm&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.hackerearth.com%2Fchallenge%2Fhiring%2Farthdesignbuild-fullstack-hiring-challenge%2F', 'Websense', 'toolbar=no,width=700,height=500');"
+    title="Content blocked by your organization. Click for details.">
+    <div  style="float: left; margin: 0">
+    <img src="https://www.mailcontrol.com/images/block.png">
+    </div>
+    <h1  id="blockMessage">Content blocked by your organization</h1>
+    <div style="float: none; clear: both"></div>
+    </div>
+    <!-- This displays the reason the site was blocked -->
+    <p class="label"> Reason:</p>
+    <p class="first-option" id="reason-text">This Forcepoint Category is filtered: Social Web - Twitter</p>
+
+    <p class="label">URL:</p>
+    <p id="url-text">https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nzhkm&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=https%3A%2F%2Fwww.hackerearth.com%2Fchallenge%2Fhiring%2Farthdesignbuild-fullstack-hiring-challenge%2F</p>
+    <div id="options">
+    <p class="label">Message:</p>
+    <p>Please refer to your organization's policy on Internet access.</p>
+
+
+
+    <form class="option" name="BackForm" action="">
+    <p>Click <b>Go Back</b> or use the browser's Back button
+    to return to the previous page.
+    <input type="button" value="       Go Back       " onClick="parent.history.back()" name="ws-back"></p>
+    </form>
+    <div style="clear: both; overflow: hidden; height: 1px;"></div>
+    </div>
+    <div><img title="Forcepoint" src="https://www.mailcontrol.com/http-resources/notification-pages/triton-logo-green.png"; style="float: right;clear: both;margin: 8px 10px 6px 0px; padding: 2px 0px;" width="145" height="35">
+</div>
+    <div style="clear: both; overflow: hidden; height:1px;"></div>
+    </div>
+    <div><!--
+Role: Super Administrator
+Category: Social Web - Twitter
+Policy: Delivery-RA
+Domain: 
+OPGroup: 
+FileType: 
+Network: 
+Protocol: https
+Category Reason String: Master database
+Exception reason: 
+ClientIP: 49.37.202.85
+User: LDAP:// OU=Delivery,DC=KITHYD,DC=com/Rajkumar Chinthala
+HostedGroup: LDAP:// CN=Builtin,DC=KITHYD,DC=com/Users,LDAP:// CN=Users,DC=KITHYD,DC=com/Domain Users,LDAP:// CN=Users,DC=KITHYD,DC=com/Delivery - RA
+--></div>
+</body>
+</html>
