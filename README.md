@@ -1,3 +1,9 @@
+REACT ANIMATION LIBRARY(IT IS REALLY CRAZY)
+-----------------------------------------------
+https://github.com/chenglou/react-motion
+https://reactcommunity.org/react-transition-group/
+
+
 REACT JS PATTERNS
 ---------------------------------------
 https://reactpatterns.com/
