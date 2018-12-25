@@ -1,0 +1,136 @@
+db.users.update(
+{username:"smith"},
+{
+$set:{
+  favorites:{
+    cities:[1,2,3],
+	movies:[2,3,4]
+  }
+}
+}
+);
+
+
+$push,
+
+$addToSet(queryPredicate,update,shouldInsertIfDoestn't find(upsert),shouldUpdatedMultipleRecords);
+
+
+db.users.update({"favorites.movies":"cassa"},
+{
+$addToSet:{"favorites.movies":"something"},
+false,
+true
+);
+
+
+
+remove()---------will delete all documents in collection
+remove(predicateQuery)---------will remove all collections which satisfies the predicatequery
+drop()--------will delete the collection 
+
+
+Range Queries
+---------------------
+$gt,$lt are used for that
+
+db.numbers.find({num:{"$gt":19995}});
+
+db.numbers.find({num:{"$gt":19995,"$lt":20000}});
+
+$gte(greater thsn or equal),$lte(less than or equal),$ne(not equal)
+
+
+-------------------------------------------
+Basic Administration
+-------------------------------------------
+>show dbs
+    ---will display all databases creates in the installation
+>show collections
+    ---will display all the collections defined in the current database selected
+>db.collection.stats() 
+    ---will display all the information regarding collection
+-------------------------------------------
+
+
+
+-------------------------------------------
+Getting Help
+------------------------------------------
+>db.help()
+        ---prints a list of commonly used methods for operating on databases
+>db.collection.help()
+        ---prints list of commonly used methods for operating on collection
+		
+		
+		
+>db
+   -------will show currently pointing database
+   
+   
+   
+----------------------------------------------
+Update Modifiers
+----------------------------------------------
+$set
+$unset
+$inc
+$dec
+
+Array modifiers in update
+--------------------------
+$push--can add duplicate values
+$each
+$slice
+$sort
+$addToSet-----add only if does not exist in array
+
+{$pop:{"key":1}}----removes element from the end
+{$pop:{"key":-1}}----removes element from the beginning
+sometimes an element should be removed based on some croteria then  we have to use $pull
+ex:
+>db.lists.insert({todo:["dishes","laundry","dry cleaning"]})
+if we do the laundry first, we can remove it from the list with the fowwoling
+>do.lists.update({},{"$pull":{todo:"laundry"}})
+
+Positional Array modification
+--------------------------------
+ex:
+{
+"content" : "...",
+"comments" : [
+{
+"comment" : "good post",
+"author" : "John",
+"votes" : 0
+},
+{
+"comment" : "i thought it was too short",
+"author" : "Claire",
+"votes" : 3
+},
+{
+"comment" : "free watches",
+"author" : "Alice",
+"votes" : -1
+}
+]
+}
+If we want ti increment the number of votes for the first comment, we can say the following
+>db.blog.update({"post":post_id},
+{"$inc":{"comments.o.votes":1}}
+)
+In many cases, though , we don't know what index of the array to modify without querying for the socument first and examining it.
+To get around this, MongoDb  has a positional operator, "$", that figures out which element of the array the query document matched and updated that element.
+ex:
+db.blog.update({"comments.author":"John"},{"$set":{"comments.$.author":"Jim"}})
+
+
+db.count.update({x : 1}, {$inc : {x : 1}}, false, true)
+> db.runCommand({getLastError : 1})
+{
+"err" : null,
+"updatedExisting" : true,
+"n" : 5,
+"ok" : true
+}
